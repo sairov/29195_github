@@ -1,0 +1,48 @@
+// .img-1 {
+//     width: 100%;
+//     height: 200px;
+//     background-size: cover;
+//     background-image: url('../public/img/img1.jpg');
+// }
+
+// .img-2 {
+//     width: 100%;
+//     height: 200px;
+//     background-size: cover;
+//     background-image: url('../public/img/img2.jpg');
+// }
+
+// .img-3 {
+//     width: 100%;
+//     height: 200px;
+//     background-size: cover;
+//     background-image: url('../public/img/img3.jpg');
+// }
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+    .nosotros-section {
+        @include flex(row, space-between, center, map-get($spacings, medium));
+    }
+}
+
+@for $i from 1 through 3 {
+    .img-#{$i} {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-image: url('../public/img/img#{$i}.jpg');
+    }
+}
+
+@each $var in hogwarts, letter, sky {
+    .img-#{$var} {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-image: url('../public/img/img-#{$var}.jpg');
+    }
+}
+
+

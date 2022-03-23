@@ -1,0 +1,70 @@
+/* HEADER & NAVBAR*/
+$theme: 'light';
+
+header {
+    .navbar {
+        min-height: 10vh;
+        padding: 0 2rem;
+        @include flex($direction: row, $align: center, $gap: map-get($spacings, medium));
+    }
+
+    .logo {
+        flex-basis: 30%;
+    }
+
+    .menu {
+        @include flex(row, space-between, center, map-get($spacings, medium));
+        flex-basis: 40%;
+
+        &__item {
+            border: 2px solid $principal;
+            transition: all .3s ease-in-out;
+            &:hover {
+                border-color: $secondary;
+                .sub-menu {
+                    display: block;
+                }
+            }
+            .menu__link {
+                font-size: 1.8em;
+                padding: 1rem;
+            }
+
+            .menu__link--active {
+                @extend .menu__link;
+                border-bottom: 2px solid crimson;
+            }
+
+            .sub-menu {
+                display: none;
+                position: absolute;
+                &__link {
+                    padding: 1rem;
+                    font-size: 1.4em;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        background-color: $secondary;
+                        color: $principal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 2em 0;
+
+        .navbar {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        padding: 2em 0;
+    }
+}

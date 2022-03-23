@@ -5,9 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <h2>Hola desde ABOUT</h2>
+    <header>
+        <nav class="navbar flex-row container">
+            <picture class="logo">
+                <img src="./public/img/logo.svg" alt="Logo de la marca Brahinworx - es literalmente el nombre de la misma">
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a class="menu__link" href="">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="./about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./about.html#ofertas">Ofertas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Porfolio</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">#1 Klazik Feztival</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">#2 Laguna Magenta</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">#3 Time for fun</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./public/img/bhavin-profile.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./public/img/bhavin-profile.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./public/img/bhavin-profile.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section class="container">
+        <div class="row">
+            <article class="col-sm-6 col-lg-4">
+                <img class="img-fluid" src="./public/img/bhavin-profile.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil incidunt perspiciatis, delectus reprehenderit et. Explicabo necessitatibus, impedit animi ut iure facilis neque eligendi aut, veniam tempora ullam. Obcaecati, temporibus.</p>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <img class="img-fluid" src="./public/img/bhavin-profile.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil incidunt perspiciatis, delectus reprehenderit et. Explicabo necessitatibus, impedit animi ut iure facilis neque eligendi aut, veniam tempora ullam. Obcaecati, temporibus.</p>
+            </article>
+            <article class="col-sm-12 col-lg-4">
+                <img class="img-fluid" src="./public/img/bhavin-profile.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil incidunt perspiciatis, delectus reprehenderit et. Explicabo necessitatibus, impedit animi ut iure facilis neque eligendi aut, veniam tempora ullam. Obcaecati, temporibus.</p>
+            </article>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
